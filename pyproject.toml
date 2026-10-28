@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tatolesod-longctx_jd182"
+version = "0.1.0"
+description = "从样本里推断长上下文优化工程师·偏好数据的成对噪声应有的字段集合，逐字段检查存在性与类型，缺失项单独列出"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "tatolesod" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://tatolesod.github.io"
+Repository = "https://github.com/tatolesod/longctx_jd182"
+Issues = "https://github.com/tatolesod/longctx_jd182/issues"
+
+[project.scripts]
+longctx_jd182 = "longctx_jd182:main"
+
+[tool.setuptools]
+py-modules = ["longctx_jd182"]
